@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Jugador;
+package Vehiculos;
 
 /**
  *
  * @author Brenda
  */
-public class Jugador2 implements Jugador {
-
+public class FactoryVehiculos {
     
 }

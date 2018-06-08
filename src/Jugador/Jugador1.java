@@ -9,6 +9,6 @@ package Jugador;
  *
  * @author Brenda
  */
-public class Jugador1 {
-    
+public class Jugador1 implements Jugador {
+
 }

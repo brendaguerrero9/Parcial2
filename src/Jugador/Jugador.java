@@ -10,5 +10,6 @@ package Jugador;
  * @author Brenda
  */
 public interface Jugador {
-    
+   
 }
+ 

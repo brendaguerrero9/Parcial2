@@ -9,7 +9,6 @@ package Jugador;
  *
  * @author Brenda
  */
-public class Jugador2 implements Jugador {
-
+public class FactoryJugador {
     
 }

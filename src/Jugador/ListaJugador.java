@@ -5,11 +5,14 @@
  */
 package Jugador;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Brenda
  */
-public class Jugador2 implements Jugador {
-
+public class ListaJugador {
+    ArrayList<JugadorConstruct> jug = new ArrayList<>();
     
 }
+

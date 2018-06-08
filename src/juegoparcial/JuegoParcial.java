@@ -15,7 +15,8 @@ public class JuegoParcial {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Menu n = new Menu();
+        n.Registrar();
     }
     
 }
