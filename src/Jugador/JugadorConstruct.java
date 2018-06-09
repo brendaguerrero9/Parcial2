@@ -13,6 +13,8 @@ public class JugadorConstruct {
     String nombre;
     int id,raza;
     
+    public JugadorConstruct(){}
+    
     public JugadorConstruct(int id,String nombre, int raza){
         this.id = id;
         this.nombre = nombre;
@@ -27,13 +29,13 @@ public class JugadorConstruct {
     public String getNombre(){
         return nombre;
     }
-    public void setNombre(){
+    public void setNombre(String nombre){
         this.nombre = nombre;
     }
     public int getRaza(){
         return raza;
     }
-    public void setRaza(){
+    public void setRaza(int raza){
         this.raza = raza;
     }
 }
