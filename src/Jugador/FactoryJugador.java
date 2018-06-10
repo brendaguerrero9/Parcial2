@@ -9,6 +9,14 @@ package Jugador;
  *
  * @author Brenda
  */
-public class FactoryJugador {
+public class FactoryJugador extends AbstractFactory {
+    @Override
+    Jugador getJugador(String jugador) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
+    
+                       
+
+       

@@ -11,4 +11,9 @@ package Jugador;
  */
 public class Jugador1 implements Jugador {
 
+    @Override
+    public void Registrar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

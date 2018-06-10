@@ -10,6 +10,6 @@ package Jugador;
  * @author Brenda
  */
 public interface Jugador {
-   
+   void Registrar();
 }
  

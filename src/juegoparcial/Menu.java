@@ -5,30 +5,38 @@
  */
 package juegoparcial;
 
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
 
 /**
  *
  * @author Brenda
  */
 public class Menu {
+   String Jugador1,Jugador2;
    Scanner leer = new Scanner(System.in);
    
     public void Registrar(){
-       String jug1,jug2;
+     
        int raza1,raza2;
+       System.out.println("**********BRENDA'S WORLD**********");
        System.out.println("Nombre jugador1: ");
-       jug1 = leer.nextLine();
+       Jugador1 = leer.nextLine();
        System.out.println("RAZAS DISPONIBLES: 1.Enanos, 2.Hechiceros, 3.Luchadores");
        raza1 = leer.nextInt();
        leer.nextLine();
        System.out.println("Nombre jugador2: ");
-       jug2 = leer.nextLine();
+       Jugador2 = leer.nextLine();
        System.out.println("RAZAS DISPONIBLES: 1.Enanos, 2.Hechiceros, 3.Luchadores");
        raza2 = leer.nextInt();
        leer.nextLine();
-       mostrar();
+       //mostrar();
+       turno();
+       //ListaJugadores.add();
+       //ListaJugadores().mostrar();
+       
 }
    public void opciones(){
    System.out.println("--------MENU--------");
@@ -68,6 +76,16 @@ public class Menu {
             }
    }
    
+   public void turno(){
+       Math.random();
+       double numRandom = Math.random();
+       if(numRandom < 0.5){
+           System.out.println("TURNO DE " + Jugador1);
+       } else {
+           System.out.println("TURNO DE  " + Jugador2);
+       }
+       
+   }
 
 }
 

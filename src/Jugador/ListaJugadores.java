@@ -19,16 +19,12 @@ public class ListaJugadores {
     jugadores = new ArrayList<>();
     }
     
-    public void add(){
+    public void add(int id,String nombre, int raza){
         JugadorConstruct jug = new JugadorConstruct();
         jugadores.add(jug);
-        Scanner leer = new Scanner(System.in);
-        System.out.println("ingrese jugador");
-        jug.setNombre(leer.nextLine());
-        System.out.println("Id de jugador");
-        jug.setId(leer.nextInt());
-        System.out.println("Ingrese raza");
-        jug.setRaza(leer.nextInt());
+        jug.setNombre(nombre);
+        jug.setId(id);
+        jug.setRaza(raza);
     }
     
     public void add(JugadorConstruct jug) throws Exception{
