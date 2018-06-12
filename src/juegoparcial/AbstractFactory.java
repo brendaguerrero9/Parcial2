@@ -5,6 +5,8 @@
  */
 package juegoparcial;
 
+import Edificacion.Edificacion;
+import Jugador.Jugador;
 import Milicia.Milicia;
 import Razas.Razas;
 import Vehiculos.Vehiculos;
@@ -17,4 +19,6 @@ public interface AbstractFactory {
     Vehiculos getVehiculo(String type);
     Razas getRaza(String type);
     Milicia getMilicia(String type);
+    Jugador getJugador(int opcion);
+    Edificacion getEdificacion(int opc);
 }

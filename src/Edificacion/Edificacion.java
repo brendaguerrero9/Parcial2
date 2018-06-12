@@ -10,5 +10,5 @@ package Edificacion;
  * @author Brenda
  */
 public interface Edificacion {
-    
+    void Agregar(int id,String nombre,int vida);
 }

@@ -5,6 +5,8 @@
  */
 package juegoparcial;
 
+import Edificacion.FactoryEdificacion;
+import Jugador.FactoryJugador;
 import Milicia.FactoryMilicia;
 import Razas.FactoryRazas;
 import Vehiculos.FactoryVehiculos;
@@ -14,14 +16,18 @@ import Vehiculos.FactoryVehiculos;
  * @author Brenda
  */
 public interface FactoryProducer {
-    public static AbstractFactory getFactory(String type){
-        switch(type){
-            case "vehiculos":
+    public static AbstractFactory getFactory(int n){
+        switch(n){
+            case 1:
                 return new FactoryVehiculos();
-            case "razas":
+            case 2:
                 return new FactoryRazas();
-            case "milicias":
+            case 3:
                 return new FactoryMilicia();
+            case 4:
+                return new FactoryJugador();
+            case 5:
+                return new FactoryEdificacion();
         }
         return null;
     }

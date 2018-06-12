@@ -9,10 +9,11 @@ package Jugador;
  *
  * @author Brenda
  */
-public class JugadorConstruct {
+public class JugadorConstruct  {
     String nombre;
-    int id,raza;
-    
+    int id;
+    int raza;
+    static ListaJugadores jug = new ListaJugadores();
     public JugadorConstruct(){}
     
     public JugadorConstruct(int id,String nombre, int raza){
@@ -20,22 +21,24 @@ public class JugadorConstruct {
         this.nombre = nombre;
         this.raza = raza;
     }
-    public int getId(){
-        return id;
-    }
+    
     public void setId(int id){
         this.id = id;
-    }
-    public String getNombre(){
-        return nombre;
     }
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
-    public int getRaza(){
-        return raza;
-    }
     public void setRaza(int raza){
         this.raza = raza;
     }
+    public int getId(){
+        return id;
+    }
+    public String getNombre(){
+        return nombre;
+    }
+    public int getRaza(){
+        return raza;
+    }
+    
 }

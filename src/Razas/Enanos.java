@@ -12,8 +12,18 @@ package Razas;
 public class Enanos implements Razas {
 
     @Override
-    public void raza() {
-        System.out.println("SOMOS 7");
+    public int NivelAtaque(int a) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int VelcidadConstruccion(int b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int vida(int c) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
    
 }

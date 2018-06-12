@@ -5,10 +5,17 @@
  */
 package Edificacion;
 
+import static Edificacion.EdificacionConstruct.edif;
+
 /**
  *
  * @author Brenda
  */
-public class Entrenar {
+public class Entrenar implements Edificacion {
+
+    @Override
+    public void Agregar(int id, String nombre, int vida) {
+        edif.agregar(id,nombre,vida);
+    }
     
 }

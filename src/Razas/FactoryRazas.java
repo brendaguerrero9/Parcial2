@@ -5,6 +5,8 @@
  */
 package Razas;
 
+import Edificacion.Edificacion;
+import Jugador.Jugador;
 import Milicia.Milicia;
 import Vehiculos.Vehiculos;
 import juegoparcial.AbstractFactory;
@@ -37,6 +39,16 @@ public class FactoryRazas implements AbstractFactory {
     @Override
     public Milicia getMilicia(String type) {
         return null;
+    }
+
+    @Override
+    public Jugador getJugador(int opcion) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Edificacion getEdificacion(int opc) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 

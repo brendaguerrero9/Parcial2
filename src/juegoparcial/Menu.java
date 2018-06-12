@@ -6,6 +6,7 @@
 package juegoparcial;
 
 
+import Jugador.Jugador;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -18,7 +19,7 @@ public class Menu {
    
    String Jugador1,Jugador2;
    Scanner leer = new Scanner(System.in);
-   
+   AbstractFactory factory;
     public void Registrar(){
      
        int raza1,raza2;
@@ -28,19 +29,19 @@ public class Menu {
        System.out.println("RAZAS DISPONIBLES: 1.Enanos, 2.Hechiceros, 3.Luchadores");
        raza1 = leer.nextInt();
        leer.nextLine();
+       factory = FactoryProducer.getFactory(4);
+       Jugador jugador = factory.getJugador(1);
+       jugador.Registrar(Jugador1, raza1);
+       
        System.out.println("Nombre jugador2: ");
        Jugador2 = leer.nextLine();
        System.out.println("RAZAS DISPONIBLES: 1.Enanos, 2.Hechiceros, 3.Luchadores");
        raza2 = leer.nextInt();
        leer.nextLine();
-       //mostrar();
-       turno();
-       mostrar();
-       CambiarTurno();
-       mostrar();
-       //ListaJugadores.add();
-       //ListaJugadores.mostrar();
-       
+       factory = FactoryProducer.getFactory(4);
+       Jugador jugador2 = factory.getJugador(2);
+       jugador2.Registrar(Jugador1, raza2);
+     
 }
    public void opciones(){
    System.out.println("--------MENU--------");
@@ -93,9 +94,9 @@ public class Menu {
    public void CambiarTurno(){
        String turno = Jugador1;
        if (turno == Jugador1){
-               System.out.println("TURNO DE " + Jugador1);
+               System.out.println("TURNO DE " + Jugador2);
        } else {
-           System.out.println("TURNO DE  " + Jugador2);
+           System.out.println("TURNO DE  " + Jugador1);
        }
        }
     

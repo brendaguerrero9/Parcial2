@@ -20,30 +20,19 @@ public class ListaJugadores {
     
     public void add(int id,String nombre, int raza){
         JugadorConstruct jug = new JugadorConstruct();
-        //jugadores.add(jug);
         jug.setNombre(nombre);
         jug.setId(id);
         jug.setRaza(raza);
+        jugadores.add(jug);
     }
     
-    public void add(JugadorConstruct jug) throws Exception{
-          if(jug != null) {
-            if (!jugadores.contains(jug)) {
-                jugadores.add(jug);
-            }
-            Exception e = new Exception("No se permiten datos duplicados");
-            throw e;
-        } else {
-            throw new Exception("No se puede agregar un jugador nulo");
+    public void imprimir(){
+        int count = 1;
+        for(JugadorConstruct jug : jugadores) {
+            System.out.println(jug.getNombre());
+            count += 1;
         }
-        
-       }
-    
-        /*public static void mostrar() {
-        for ( JugadorConstruct e : jugadores) {
-            System.out.println(e.toString());
-        }
-    }*/
+    }
 }
 
 

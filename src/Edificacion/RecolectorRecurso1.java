@@ -5,10 +5,17 @@
  */
 package Edificacion;
 
+import static Edificacion.EdificacionConstruct.edif;
+
 /**
  *
  * @author Brenda
  */
-public class RecolectorRecurso1 {
+public class RecolectorRecurso1 implements Edificacion{
+
+    @Override
+    public void Agregar(int id, String nombre, int vida) {
+        edif.agregar(id, nombre, vida);
+    }
     
 }

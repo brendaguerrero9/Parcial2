@@ -10,5 +10,8 @@ package Razas;
  * @author Brenda
  */
 public interface Razas {
-    void raza();
+    int NivelAtaque(int a);
+    int VelcidadConstruccion(int b);
+    int vida(int c);
+    
 }

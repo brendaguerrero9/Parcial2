@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Jugador;
+import static Jugador.JugadorConstruct.jug;
 
 /**
  *
@@ -12,11 +13,8 @@ package Jugador;
 public class Jugador1 implements Jugador {
 
     @Override
-    public void Registrar() {
-    }
-
-    @Override
-    public void CambiarTurno() {
+    public void Registrar(String nombre, int raza) {
+        jug.add(1, nombre, raza);
     }
 
 }
