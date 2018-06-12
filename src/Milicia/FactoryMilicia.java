@@ -5,10 +5,35 @@
  */
 package Milicia;
 
+import Razas.Razas;
+import Vehiculos.Vehiculos;
+import juegoparcial.AbstractFactory;
+
 /**
  *
  * @author Brenda
  */
-public class FactoryMilicia {
+public class FactoryMilicia implements AbstractFactory {
+
+    @Override
+    public Vehiculos getVehiculo(String type) {
+        return null;
+    }
+
+    @Override
+    public Razas getRaza(String type) {
+        return null;
+    }
+
+    @Override
+    public Milicia getMilicia(String type) {
+        switch(type){
+            case "escuadrones":
+                return new Escuadron();
+            case "especialistas":
+                return new Especialistas();
+        }
+        return null;
+    }
     
 }

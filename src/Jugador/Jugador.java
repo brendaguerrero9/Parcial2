@@ -11,5 +11,6 @@ package Jugador;
  */
 public interface Jugador {
    void Registrar();
+   void CambiarTurno();
 }
  

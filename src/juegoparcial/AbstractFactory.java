@@ -5,18 +5,16 @@
  */
 package juegoparcial;
 
+import Milicia.Milicia;
+import Razas.Razas;
+import Vehiculos.Vehiculos;
+
 /**
  *
  * @author Brenda
  */
-public class JuegoParcial {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        Menu n = new Menu();
-        n.Registrar();
-    }
-    
+public interface AbstractFactory {
+    Vehiculos getVehiculo(String type);
+    Razas getRaza(String type);
+    Milicia getMilicia(String type);
 }

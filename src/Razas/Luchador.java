@@ -9,6 +9,11 @@ package Razas;
  *
  * @author Brenda
  */
-public class Luchador {
-    
+public class Luchador implements Razas {
+
+    @Override
+    public void raza() {
+        System.out.println("FIGHTING");
+    }
+  
 }

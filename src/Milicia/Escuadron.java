@@ -9,6 +9,16 @@ package Milicia;
  *
  * @author Brenda
  */
-public class Escuadron {
+public class Escuadron implements Milicia {
+
+    @Override
+    public void AtacarTorre() {
+        System.out.println("ATACANDO TORRE!!!");
+    }
+
+    @Override
+    public void AtacarTropa() {
+        System.out.println("Que raza desea atacar?");
+    }
     
 }

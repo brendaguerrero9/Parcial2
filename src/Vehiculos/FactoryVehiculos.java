@@ -5,10 +5,35 @@
  */
 package Vehiculos;
 
+import Milicia.Milicia;
+import Razas.Razas;
+import juegoparcial.AbstractFactory;
+
 /**
  *
  * @author Brenda
  */
-public class FactoryVehiculos {
+public class FactoryVehiculos implements AbstractFactory {
+
+    @Override
+    public Vehiculos getVehiculo(String type) {
+        switch(type){
+            case "tanque":
+                return new Tanque();
+            case "truck" :
+                return new Truck();
+        }
+        return null;
+    }
+
+    @Override
+    public Razas getRaza(String type) {
+        return null;
+    }
+
+    @Override
+    public Milicia getMilicia(String type) {
+        return null;
+    }
     
 }

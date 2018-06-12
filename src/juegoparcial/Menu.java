@@ -15,6 +15,7 @@ import java.util.Scanner;
  * @author Brenda
  */
 public class Menu {
+   
    String Jugador1,Jugador2;
    Scanner leer = new Scanner(System.in);
    
@@ -34,8 +35,11 @@ public class Menu {
        leer.nextLine();
        //mostrar();
        turno();
+       mostrar();
+       CambiarTurno();
+       mostrar();
        //ListaJugadores.add();
-       //ListaJugadores().mostrar();
+       //ListaJugadores.mostrar();
        
 }
    public void opciones(){
@@ -86,7 +90,15 @@ public class Menu {
        }
        
    }
-
+   public void CambiarTurno(){
+       String turno = Jugador1;
+       if (turno == Jugador1){
+               System.out.println("TURNO DE " + Jugador1);
+       } else {
+           System.out.println("TURNO DE  " + Jugador2);
+       }
+       }
+    
 }
 
 

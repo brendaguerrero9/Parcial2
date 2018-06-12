@@ -10,5 +10,5 @@ package Vehiculos;
  * @author Brenda
  */
 public interface Vehiculos {
-    
+    void Atacar();
 }

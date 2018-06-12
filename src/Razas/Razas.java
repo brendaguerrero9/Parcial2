@@ -10,5 +10,5 @@ package Razas;
  * @author Brenda
  */
 public interface Razas {
-    
+    void raza();
 }

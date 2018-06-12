@@ -9,6 +9,11 @@ package Razas;
  *
  * @author Brenda
  */
-public class Enanos {
-    
+public class Enanos implements Razas {
+
+    @Override
+    public void raza() {
+        System.out.println("SOMOS 7");
+    }
+   
 }

@@ -9,6 +9,11 @@ package Vehiculos;
  *
  * @author Brenda
  */
-public class Truck {
+public class Truck implements Vehiculos {
+
+    @Override
+    public void Atacar() {
+        System.out.println("Truck atacando");
+    }
     
 }

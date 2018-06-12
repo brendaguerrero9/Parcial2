@@ -9,6 +9,11 @@ package Razas;
  *
  * @author Brenda
  */
-public class Hechicero {
+public class Hechicero implements Razas {
+
+    @Override
+    public void raza() {
+        System.out.println("KADABRA");
+    }
     
 }

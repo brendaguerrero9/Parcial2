@@ -6,7 +6,6 @@
 package Jugador;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 /**
  *
@@ -16,12 +15,12 @@ public class ListaJugadores {
     private ArrayList<JugadorConstruct> jugadores;
     
     public ListaJugadores(){
-    jugadores = new ArrayList<>();
+        jugadores = new ArrayList<>();
     }
     
     public void add(int id,String nombre, int raza){
         JugadorConstruct jug = new JugadorConstruct();
-        jugadores.add(jug);
+        //jugadores.add(jug);
         jug.setNombre(nombre);
         jug.setId(id);
         jug.setRaza(raza);
@@ -40,11 +39,11 @@ public class ListaJugadores {
         
        }
     
-        public void mostrar() {
+        /*public static void mostrar() {
         for ( JugadorConstruct e : jugadores) {
             System.out.println(e.toString());
         }
-    }
+    }*/
 }
 
 
