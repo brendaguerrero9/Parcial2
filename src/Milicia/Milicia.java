@@ -10,6 +10,5 @@ package Milicia;
  * @author Brenda
  */
 public interface Milicia {
-    void AtacarTorre();
-    void AtacarTropa();
+    void Adding(int id,int tipoMilicia);
 }

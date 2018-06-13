@@ -6,6 +6,7 @@
 package juegoparcial;
 
 
+import Edificacion.Edificacion;
 import Jugador.Jugador;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -18,11 +19,10 @@ import java.util.Scanner;
 public class Menu {
    
    String Jugador1,Jugador2;
+   int raza1,raza2;
    Scanner leer = new Scanner(System.in);
    AbstractFactory factory;
     public void Registrar(){
-     
-       int raza1,raza2;
        System.out.println("**********BRENDA'S WORLD**********");
        System.out.println("Nombre jugador1: ");
        Jugador1 = leer.nextLine();
@@ -41,6 +41,7 @@ public class Menu {
        factory = FactoryProducer.getFactory(4);
        Jugador jugador2 = factory.getJugador(2);
        jugador2.Registrar(Jugador1, raza2);
+       
      
 }
    public void opciones(){
@@ -51,6 +52,8 @@ public class Menu {
    System.out.println("4.Defender");
 }
    public void mostrar()  {
+        Scanner leer = new Scanner(System.in);
+        int x = 0;
         int opcion = 0;
          opciones();
             while (opcion != 5) {
@@ -60,6 +63,12 @@ public class Menu {
                 switch (opcion) {
                     case 1:
                         System.out.println("Creando edificaciones");
+                        System.out.println("1.Taller 1. \n2.Taller 2. \n3.Entrenar \n4.Recolectar 1.\n5.Recolectar 2");
+                        x = leer.nextInt();
+                        factory = FactoryProducer.getFactory(5);
+                        Edificacion edificacion = factory.getEdificacion(1);
+                        edificacion.Agregar(opcion, Jugador1, opcion);
+                        
                         break;
                     case 2 :
                         System.out.println("Atacando jugador");

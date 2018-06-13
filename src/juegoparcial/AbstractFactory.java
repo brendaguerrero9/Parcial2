@@ -16,9 +16,9 @@ import Vehiculos.Vehiculos;
  * @author Brenda
  */
 public interface AbstractFactory {
-    Vehiculos getVehiculo(String type);
+    Vehiculos getVehiculo(int option);
     Razas getRaza(String type);
-    Milicia getMilicia(String type);
+    Milicia getMilicia(int opt);
     Jugador getJugador(int opcion);
     Edificacion getEdificacion(int opc);
 }

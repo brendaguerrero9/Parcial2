@@ -17,24 +17,9 @@ import juegoparcial.AbstractFactory;
  */
 public class FactoryVehiculos implements AbstractFactory {
 
-    @Override
-    public Vehiculos getVehiculo(String type) {
-        switch(type){
-            case "tanque":
-                return new Tanque();
-            case "truck" :
-                return new Truck();
-        }
-        return null;
-    }
 
     @Override
     public Razas getRaza(String type) {
-        return null;
-    }
-
-    @Override
-    public Milicia getMilicia(String type) {
         return null;
     }
 
@@ -47,5 +32,22 @@ public class FactoryVehiculos implements AbstractFactory {
     public Edificacion getEdificacion(int opc) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
-}
+
+    @Override
+    public Milicia getMilicia(int opt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Vehiculos getVehiculo(int option) {
+         switch(option){
+            case 1:
+                return new Tanque();
+            case 2:
+                return new Truck();
+        }
+        return null;
+    }
+        
+    }
+   

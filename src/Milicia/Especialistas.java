@@ -5,6 +5,9 @@
  */
 package Milicia;
 
+import static Milicia.MiliciaConstruct.mili;
+
+
 /**
  *
  * @author Brenda
@@ -12,13 +15,8 @@ package Milicia;
 public class Especialistas implements Milicia{
 
     @Override
-    public void AtacarTorre() {
-        System.out.println("ATACANDO TORRE CON ESPECIALISTA");
+    public void Adding(int id, int tipoMilicia) {
+        mili.adding(id,tipoMilicia);
     }
 
-    @Override
-    public void AtacarTropa() {
-        System.out.println("Que raza desea atacar?");
-    }
-    
 }

@@ -5,6 +5,8 @@
  */
 package Vehiculos;
 
+import static Vehiculos.VehiculosConstruct.veh;
+
 /**
  *
  * @author Brenda
@@ -12,8 +14,8 @@ package Vehiculos;
 public class Tanque implements Vehiculos {
 
     @Override
-    public void Atacar() {
-        System.out.println("Tanque atacando");
+    public void adjunt(int id, int tipoVeh) {
+        veh.adjuntar(id,tipoVeh);
     }
         
     
