@@ -15,7 +15,13 @@ public class ConstruirVeh2 implements Edificacion {
 
     @Override
     public void Agregar(int id, String nombre, int vida) {
-        edif.agregar(id, nombre, vida);
+        edif.agregar(id, "ConstVeh2", vida);
     }
+
+    @Override
+    public void View(int id) {
+        edif.imprimir(id);      
+    }
+    
 
 }

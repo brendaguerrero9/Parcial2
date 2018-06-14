@@ -10,5 +10,6 @@ package Milicia;
  * @author Brenda
  */
 public interface Milicia {
-    void Adding(int id,int tipoMilicia);
+    void Adding(int id,String tipoMilicia);
+    void Viewing(int id);
 }

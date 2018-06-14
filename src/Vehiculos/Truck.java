@@ -13,7 +13,12 @@ import static Vehiculos.VehiculosConstruct.veh;
 public class Truck implements Vehiculos {
 
     @Override
-    public void adjunt(int id, int tipoVeh) {
-        veh.adjuntar(id, tipoVeh);
+    public void print(int id) {
+        veh.imprimir(id);
+    }
+
+    @Override
+    public void adjunt(int id, String tipoVeh) {
+        veh.adjuntar(id, "Truck");
     }
 }

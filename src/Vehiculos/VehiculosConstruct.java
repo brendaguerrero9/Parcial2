@@ -11,11 +11,11 @@ package Vehiculos;
  */
 public class VehiculosConstruct {
     int id;
-    int tipoVeh;
+    String tipoVeh;
     static ListaVehiculos veh = new ListaVehiculos();
     public VehiculosConstruct(){}
     
-    public VehiculosConstruct(int id, int tipoVeh){
+    public VehiculosConstruct(int id, String tipoVeh){
         this.id = id;
         this.tipoVeh = tipoVeh;
     }
@@ -24,7 +24,7 @@ public class VehiculosConstruct {
         this.id = id;
     }
 
-    public void setTipoVeh(int tipoVeh) {
+    public void setTipoVeh(String tipoVeh) {
         this.tipoVeh = tipoVeh;
     }
 
@@ -32,7 +32,7 @@ public class VehiculosConstruct {
         return id;
     }
 
-    public int getTipoVeh() {
+    public String getTipoVeh() {
         return tipoVeh;
     }
     

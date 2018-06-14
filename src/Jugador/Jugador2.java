@@ -17,4 +17,15 @@ public class Jugador2 implements Jugador {
         jug.add(2, nombre, raza);
     }
 
+    @Override
+    public void Mostrar(int id) {
+       jug.imprimir(id);
+    }
+
+    @Override
+    public int Raza(int id) {
+        return jug.raza(id);
+    }
+
+
 }

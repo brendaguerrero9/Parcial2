@@ -11,11 +11,11 @@ package Milicia;
  */
 public class MiliciaConstruct {
     int id;
-    int tipoMilicia;
+    String tipoMilicia;
     static ListaMilicias mili = new ListaMilicias();
     public MiliciaConstruct(){}
     
-    public MiliciaConstruct(int id, int tipoMilicia){
+    public MiliciaConstruct(int id, String tipoMilicia){
         this.id = id;
         this.tipoMilicia = tipoMilicia;
     }
@@ -24,7 +24,7 @@ public class MiliciaConstruct {
         this.id = id;
     }
 
-    public void setTipoMilicia(int tipoMilicia) {
+    public void setTipoMilicia(String tipoMilicia) {
         this.tipoMilicia = tipoMilicia;
     }
 
@@ -32,7 +32,7 @@ public class MiliciaConstruct {
         return id;
     }
 
-    public int getTipoMilicia() {
+    public String getTipoMilicia() {
         return tipoMilicia;
     }
     

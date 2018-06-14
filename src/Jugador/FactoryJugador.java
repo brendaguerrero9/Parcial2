@@ -29,7 +29,7 @@ public class FactoryJugador implements AbstractFactory{
 
     @Override
     public Razas getRaza(String type) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
     }
 
     @Override
@@ -39,12 +39,12 @@ public class FactoryJugador implements AbstractFactory{
 
     @Override
     public Milicia getMilicia(int opt) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
     }
 
     @Override
     public Vehiculos getVehiculo(int option) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
     }
 }
     

@@ -14,10 +14,15 @@ import static Milicia.MiliciaConstruct.mili;
 public class Escuadron implements Milicia {
 
     @Override
-    public void Adding(int id, int tipoMilicia) {
-        mili.adding(id, tipoMilicia);
+    public void Viewing(int id) {
+        mili.imprimir(id);
     }
 
+    @Override
+    public void Adding(int id, String tipoMilicia) {
+        mili.adding(id, "Escuadrones");
+        
+    }
 
-    
+  
 }

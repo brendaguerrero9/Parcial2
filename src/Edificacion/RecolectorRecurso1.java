@@ -15,7 +15,11 @@ public class RecolectorRecurso1 implements Edificacion{
 
     @Override
     public void Agregar(int id, String nombre, int vida) {
-        edif.agregar(id, nombre, vida);
+        edif.agregar(id, "Recolector Recurso 1", vida);
     }
-    
+
+    @Override
+    public void View(int id) {
+        edif.imprimir(id);
+    }
 }

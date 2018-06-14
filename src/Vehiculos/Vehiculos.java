@@ -10,5 +10,6 @@ package Vehiculos;
  * @author Brenda
  */
 public interface Vehiculos {
-    void adjunt(int id, int tipoVeh);
+    void adjunt(int id, String tipoVeh);
+    void print(int id);
 }

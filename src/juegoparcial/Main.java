@@ -22,6 +22,7 @@ public class Main {
         Menu n = new Menu();
         n.Registrar();
         n.mostrar();
+        //n.turno();
         
         
 

@@ -22,11 +22,19 @@ public class ListaEdificacion {
         edif.setId(id);
         edif.setNombre(nombre);
         edif.setVida(vida);
-        edificaciones.add(edif);
-
-        
-        
-
-  
+        edificaciones.add(edif);                    
+    }
+    public void imprimir(int id){
+        int count = 1;
+        for(EdificacionConstruct edif : edificaciones) {
+            if(id == edif.id){
+                System.out.println("Construyendo " + edif.getNombre());
+            } else {
+                System.out.println("const " + edif.getNombre());
+            }
+            System.out.println( edif.getNombre());
+            count += 1;
+            
+        }
     }
 }

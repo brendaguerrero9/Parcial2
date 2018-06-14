@@ -18,12 +18,24 @@ public class ListaVehiculos {
         vehiculos = new ArrayList<>();
     }
     
-    public void adjuntar(int id,int tipoVeh){
+    public void adjuntar(int id,String tipoVeh){
         VehiculosConstruct veh = new VehiculosConstruct();
         veh.setId(id);
         veh.setTipoVeh(tipoVeh);
-        vehiculos.add(veh);
-        
+        vehiculos.add(veh);        
+    }
+    public void imprimir(int id){
+        int count = 1;
+        for(VehiculosConstruct veh : vehiculos) {
+            if(id == veh.id){
+                System.out.println("ESTAS OCUPANDO: " + veh.getTipoVeh());
+            } else {
+                System.out.println("ESTAS OCUPANDO: " + veh.getTipoVeh());
+            }
+            System.out.println(veh.getId());
+            count += 1;
+            
+        }
     }
     
 }

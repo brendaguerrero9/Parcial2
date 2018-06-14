@@ -11,5 +11,7 @@ package Jugador;
  */
 public interface Jugador {
    void Registrar(String nombre, int raza);
+   void Mostrar(int id);
+   int Raza(int id);
 }
  
