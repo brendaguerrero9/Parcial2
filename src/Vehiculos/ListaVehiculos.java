@@ -37,5 +37,32 @@ public class ListaVehiculos {
             
         }
     }
+
+    public void Enemigo1(int id) {
+        int count = 1;
+        for (VehiculosConstruct veh2 : vehiculos) {
+            if (id == 1) {
+                System.out.println(veh2.getTipoVeh());
+            } else {
+                System.out.println(veh2.getTipoVeh());
+            }
+            System.out.println(veh2.getTipoVeh());
+            count += 1;
+        }
+    }
+    
+    
+    public void Enemigo2(int id) {
+        int count = 1;
+        for (VehiculosConstruct veh2 : vehiculos) {
+            if (id == 2) {
+                System.out.println(veh2.getTipoVeh());
+            } else {
+                System.out.println(veh2.getTipoVeh());
+            }
+            System.out.println(veh2.getTipoVeh());
+            count += 1;
+        }
+    }
     
 }

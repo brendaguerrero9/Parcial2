@@ -15,6 +15,9 @@ public class EdificacionConstruct {
     int vida;
     
     static ListaEdificacion edif = new ListaEdificacion();
+    static ListaEdificacion edif2 = new ListaEdificacion();
+    
+    
     public EdificacionConstruct(){}
     
     public EdificacionConstruct(int id,String nombre, int vida){

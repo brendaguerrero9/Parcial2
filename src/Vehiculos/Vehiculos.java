@@ -12,4 +12,6 @@ package Vehiculos;
 public interface Vehiculos {
     void adjunt(int id, String tipoVeh);
     void print(int id);
+    void Enemigo1(int id);
+    void Enemigo2(int id);
 }

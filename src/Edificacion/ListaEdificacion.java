@@ -17,6 +17,7 @@ public class ListaEdificacion {
     public ListaEdificacion(){
         edificaciones = new ArrayList<>();
     }
+    
     public void agregar(int id,String nombre, int vida){
         EdificacionConstruct edif = new EdificacionConstruct();
         edif.setId(id);
@@ -27,14 +28,42 @@ public class ListaEdificacion {
     public void imprimir(int id){
         int count = 1;
         for(EdificacionConstruct edif : edificaciones) {
-            if(id == edif.id){
-                System.out.println("Construyendo " + edif.getNombre());
+            if(id == 1){
+                System.out.println("Construyendo " + edif.getId());
             } else {
-                System.out.println("const " + edif.getNombre());
+                System.out.println(edif.getId());
             }
             System.out.println( edif.getNombre());
             count += 1;
             
         }
+        
     }
+    
+    public void Enemigo1(int id) {
+        int count = 1;
+        for (EdificacionConstruct edif2 : edificaciones) {
+            if (id == 1) {
+                System.out.println("Construyendo " + edif2.getNombre());
+            } else {
+                System.out.println("const " + edif2.getNombre());
+            }
+            System.out.println(edif2.getNombre());
+            count += 1;
+        }
+    }
+    
+    public void Enemigo2(int id) {
+        int count = 1;
+        for (EdificacionConstruct edif2 : edificaciones) {
+            if (id == 2) {
+                System.out.println("Construyendo " + edif2.getNombre());
+            } else {
+                System.out.println("const " + edif2.getNombre());
+            }
+            System.out.println(edif2.getNombre());
+            count += 1;
+        }
+    }
+    
 }

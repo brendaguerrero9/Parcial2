@@ -5,10 +5,6 @@
  */
 package juegoparcial;
 
-import Milicia.Milicia;
-import Razas.Razas;
-import Vehiculos.Vehiculos;
-
 /**
  *
  * @author Brenda

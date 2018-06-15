@@ -26,6 +26,8 @@ public class FactoryRazas implements AbstractFactory {
                 return new Hechicero();
             case "luchador":
                 return new Luchador();
+            case "duende":
+                return new Duende();
                 
     }
         return null;

@@ -6,15 +6,12 @@
 package Jugador;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 /**
  *
  * @author Brenda
  */
 public class ListaJugadores {
-    Scanner leer = new Scanner(System.in);
-    String Jugador1,Jugador2;
     private ArrayList<JugadorConstruct> jugadores;
     
     public ListaJugadores(){
@@ -55,8 +52,32 @@ public class ListaJugadores {
         } 
         return Raza;
     }
-        
+    public void Enemigo1(int id){
+        int count = 1;
+        for(JugadorConstruct jugEnemigo : jugadores) {
+            if(id == 1){
+                System.out.println("jug" + jugEnemigo.getNombre());
+            } else {
+                System.out.println("j2 " + jugEnemigo.getNombre());
+            }
+            System.out.println(jugEnemigo.getNombre());
+            count += 1;    
+        }  
+    } 
+    public void Enemigo2(int id) {
+        int count = 1;
+        for (JugadorConstruct jugEnemigo : jugadores) {
+            if (id == 2) {
+                System.out.println("jug" + jugEnemigo.getNombre());
+            } else {
+                System.out.println("j2 " + jugEnemigo.getNombre());
+            }
+            System.out.println(jugEnemigo.getNombre());
+            count += 1;
+        }
     }
+    
+  }
 
 
 

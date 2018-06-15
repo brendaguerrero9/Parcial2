@@ -5,6 +5,7 @@
  */
 package Jugador;
 import static Jugador.JugadorConstruct.jug;
+import static Jugador.JugadorConstruct.jugEnemigo;
 
 /**
  *
@@ -12,19 +13,50 @@ import static Jugador.JugadorConstruct.jug;
  */
 public class Jugador1 implements Jugador {
 
-    @Override
-    public void Registrar(String nombre, int raza) {
-        jug.add(1, nombre, raza);
-    }
 
     @Override
     public void Mostrar(int id) {
-        jug.imprimir(id);
+        if(id == 1){
+            jug.imprimir(id);   
+        }else
+            jugEnemigo.imprimir(id);
     }
 
     @Override
     public int Raza(int id) {
-         return jug.raza(id);
+        if(id == 1){
+            jug.raza(id);
+        }else
+            jugEnemigo.raza(id);
+        return jug.raza(id);
+    }      
+
+    @Override
+    public void Enemigo1(int id) {
+        if(id == 1){
+            jug.Enemigo1(id);
+        }else
+            jugEnemigo.Enemigo1(id);
+
+    }
+
+    @Override
+    public void Enemigo2(int id) {
+        if(id == 1){
+            jug.Enemigo2(id);
+        }else
+            jugEnemigo.Enemigo2(id);
+
+        
+    }
+
+    @Override
+    public void Registrar(String nombre, int raza, int id) {
+        if(id == 1){
+            jug.add(id, nombre, raza);
+        }else{
+            jugEnemigo.add(id, nombre, raza);
+        }
     }
 
 

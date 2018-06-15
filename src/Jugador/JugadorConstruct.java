@@ -14,6 +14,8 @@ public class JugadorConstruct  {
     int id;
     int raza;
     static ListaJugadores jug = new ListaJugadores();
+    static ListaJugadores jugEnemigo = new ListaJugadores();
+    
     public JugadorConstruct(){}
     
     public JugadorConstruct(int id,String nombre, int raza){

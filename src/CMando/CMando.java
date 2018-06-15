@@ -3,17 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Jugador;
+package CMando;
 
 /**
  *
  * @author Brenda
  */
-public interface Jugador {
-   void Registrar(String nombre, int raza, int id);
-   void Mostrar(int id);
-   int Raza(int id);
-   void Enemigo1(int id);
-   void Enemigo2(int id);
+public interface CMando {
+    
 }
- 

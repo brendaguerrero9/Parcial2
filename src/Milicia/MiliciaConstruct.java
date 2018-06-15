@@ -13,6 +13,8 @@ public class MiliciaConstruct {
     int id;
     String tipoMilicia;
     static ListaMilicias mili = new ListaMilicias();
+    static ListaMilicias mili2 = new ListaMilicias();
+    
     public MiliciaConstruct(){}
     
     public MiliciaConstruct(int id, String tipoMilicia){

@@ -12,4 +12,6 @@ package Edificacion;
 public interface Edificacion {
     void Agregar(int id,String nombre,int vida);
     void View(int id);
+    void Enemigo1(int id);
+    void Enemigo2(int id);
 }

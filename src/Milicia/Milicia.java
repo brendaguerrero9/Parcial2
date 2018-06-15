@@ -12,4 +12,7 @@ package Milicia;
 public interface Milicia {
     void Adding(int id,String tipoMilicia);
     void Viewing(int id);
+    void Enemigo1(int id);
+    void Enemigo2(int id);
+    
 }

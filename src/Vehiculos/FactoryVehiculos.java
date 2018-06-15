@@ -45,6 +45,8 @@ public class FactoryVehiculos implements AbstractFactory {
                 return new Tanque();
             case 2:
                 return new Truck();
+            case 3:
+                return new Herbie();
         }
         return null;
     }

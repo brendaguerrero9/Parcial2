@@ -6,6 +6,7 @@
 package Milicia;
 
 import static Milicia.MiliciaConstruct.mili;
+import static Milicia.MiliciaConstruct.mili2;
 
 
 /**
@@ -16,12 +17,34 @@ public class Especialistas implements Milicia{
 
     @Override
     public void Viewing(int id) {
-        mili.imprimir(id);
+        if(id == 1){
+            mili.imprimir(id);   
+        }else
+            mili2.imprimir(id);
     }
 
     @Override
     public void Adding(int id, String tipoMilicia) {
-        mili.adding(id, "Especialistas");      
+        if(id == 1){
+            mili.adding(id, "Especialistas"); 
+        }else
+            mili2.adding(id, "Especialistas");      
+    }
+
+    @Override
+    public void Enemigo1(int id) {
+        if(id == 1){
+            mili.Enemigo1(id);   
+        }else
+            mili2.Enemigo1(id);
+    }
+
+    @Override
+    public void Enemigo2(int id) {
+        if(id == 1){
+            mili.Enemigo2(id);   
+        }else
+            mili2.Enemigo2(id);
     }
 
 }

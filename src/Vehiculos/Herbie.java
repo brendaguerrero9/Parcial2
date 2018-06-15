@@ -7,11 +7,20 @@ package Vehiculos;
 
 import static Vehiculos.VehiculosConstruct.veh;
 import static Vehiculos.VehiculosConstruct.veh2;
+
 /**
  *
  * @author Brenda
  */
-public class Truck implements Vehiculos {
+public class Herbie implements Vehiculos {
+
+    @Override
+    public void adjunt(int id, String tipoVeh) {
+        if(id == 1){
+            veh.adjuntar(id, "Herbie"); 
+        }else
+            veh2.adjuntar(id, "Herbie");
+    }
 
     @Override
     public void print(int id) {
@@ -22,20 +31,11 @@ public class Truck implements Vehiculos {
     }
 
     @Override
-    public void adjunt(int id, String tipoVeh) {
-        if(id == 1){
-            veh.adjuntar(id, "Truck"); 
-        }else
-            veh2.adjuntar(id, "Truck");
-    }
-
-    @Override
     public void Enemigo1(int id) {
         if(id == 1){
             veh.Enemigo1(id);
         }else
             veh2.Enemigo1(id);
-
     }
 
     @Override
@@ -45,4 +45,5 @@ public class Truck implements Vehiculos {
         }else
             veh2.Enemigo2(id);
     }
+    
 }

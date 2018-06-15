@@ -13,6 +13,8 @@ public class VehiculosConstruct {
     int id;
     String tipoVeh;
     static ListaVehiculos veh = new ListaVehiculos();
+    static ListaVehiculos veh2 = new ListaVehiculos();
+    
     public VehiculosConstruct(){}
     
     public VehiculosConstruct(int id, String tipoVeh){

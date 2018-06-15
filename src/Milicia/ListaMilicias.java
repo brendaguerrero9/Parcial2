@@ -28,13 +28,38 @@ public class ListaMilicias {
         int count = 1;
         for(MiliciaConstruct mili : milicias) {
             if(id == mili.id){
-                System.out.println("HAS ELEGIDO: " + mili.getId());
+                System.out.println("HAS ELEGIDO: " + mili.getTipoMilicia());
             } else {
-                System.out.println("HAS ELEGIDO: " + mili.getId());
+                System.out.println("HAS ELEGIDO: " + mili.getTipoMilicia());
             }
-            System.out.println(mili.getId());
+            System.out.println(mili.getTipoMilicia());
             count += 1;
             
+        }
+    }
+    public void Enemigo1(int id) {
+        int count = 1;
+        for (MiliciaConstruct mili2 : milicias) {
+            if (id == 1) {
+                System.out.println("jug" + mili2.getTipoMilicia());
+            } else {
+                System.out.println("j2 " + mili2.getTipoMilicia());
+            }
+            System.out.println(mili2.getTipoMilicia());
+            count += 1;
+        }
+    }
+    
+    public void Enemigo2(int id) {
+        int count = 1;
+        for (MiliciaConstruct mili2 : milicias) {
+            if (id == 2) {
+                System.out.println("jug" + mili2.getTipoMilicia());
+            } else {
+                System.out.println("j2 " + mili2.getTipoMilicia());
+            }
+            System.out.println(mili2.getTipoMilicia());
+            count += 1;
         }
     }
   }
