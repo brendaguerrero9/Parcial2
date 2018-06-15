@@ -10,5 +10,8 @@ package CMando;
  * @author Brenda
  */
 public interface CMando {
-    
+    void Crear();
+    void Almacenar();
+    void AlmacenadorRecursos(int Recurso1,int Recurso2, int Recurso3 );
+    void MejoraDisponible();
 }
